@@ -184,3 +184,7 @@ PYTHONPATH=src python -m unittest discover -s tests -v
 The local source and installed-wheel suites passed 37 tests. The suite includes a controlled loopback HTTP provider; current hosted results are in the CI badge above. Synthetic fixtures are not a real-user benchmark.
 
 MIT licensed. See [LICENSE](LICENSE) and [CHANGELOG.md](CHANGELOG.md). Version 0.2.0 is a development release. Independent pilots and production validation remain separate steps.
+
+---
+
+Explore more of my work: [latest open-source tools](https://github.com/Balaji91221#latest-open-source-tools) · [recent projects](https://github.com/Balaji91221#recent-work).
