@@ -8,8 +8,9 @@ Evidence-aware regression checks for retrieval systems. Snapshot a corpus, run
 reviewed queries against baseline/candidate retrievers, and distinguish ranking
 regressions from missing or stale source evidence.
 
-Version 0.2.0 is a development release with public source on GitHub. The package
-is not published to PyPI, production validated, or a hosted service. Distribution name: `retrievalci-local`;
+Version 0.2.0 is a development release with public source on GitHub. Install with
+`python -m pip install retrievalci`. It is not production validated or a hosted
+service. Distribution name: `retrievalci`;
 Python import and CLI: `retrievalci`. Runtime dependencies: Python >=3.10 standard
 library only. Local lexical retrieval requires no model account or network.
 
@@ -272,7 +273,7 @@ configured CI matrix tests wheel installation, the full suite, CLI, and demos on
 Python 3.10/3.12/3.13 across Linux/macOS/Windows. See IMPLEMENTATION_STATUS.md for
 what was actually executed locally.
 
-See CONTRIBUTING.md, SECURITY.md, CHANGELOG.md, and PROJECT_PLAN.md. The original code is MIT licensed. Public naming,
-PyPI publication and independent pilots remain owner/release work.
+See CONTRIBUTING.md, SECURITY.md, CHANGELOG.md, and PROJECT_PLAN.md. The original code is MIT licensed.
+Independent pilots and production validation remain separate work.
 Use [SECURITY.md](../SECURITY.md) for private reporting. Hosted dashboards, multi-tenancy, PDF/OCR,
 embedding providers, and optional answer evaluation are outside this local release.

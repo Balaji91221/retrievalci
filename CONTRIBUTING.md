@@ -25,6 +25,6 @@ permission in fixtures or issue reports.
 
 The CI matrix is configured for Python 3.10, 3.12, and 3.13 on Linux, macOS, and
 Windows. Configuration is not a claim all jobs have run; local verification is
-recorded in IMPLEMENTATION_STATUS.md. Original code is MIT licensed. GitHub source
-publication does not imply a PyPI release. Package publication remains an owner
+recorded in IMPLEMENTATION_STATUS.md. Original code is MIT licensed. Distribution,
+import and CLI name are `retrievalci`. Package publication remains a maintainer
 action; this checkout does not automatically publish registry artifacts.

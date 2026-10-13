@@ -2,7 +2,7 @@
 
 Regression testing for evolving knowledge bases.
 
-**Status:** Local roadmap implementation completed in v0.2.0, with external PyPI publication and pilot gates still open. See [implementation matrix](IMPLEMENTATION_STATUS.md) and [actual usage instructions](README.md). The design below records the original proposed architecture; current source/CLI commands are documented in README. Deployment and production validation have not started. **Planning date:** 13 October 2026. Public package naming still requires an availability check.
+**Status:** Local roadmap implementation completed in v0.2.0, with public `retrievalci` packaging prepared and independent pilot gates still open. See [implementation matrix](IMPLEMENTATION_STATUS.md) and [actual usage instructions](README.md). The design below records the original proposed architecture; current source/CLI commands are documented in README. Deployment and production validation have not started. **Planning date:** 13 October 2026. The public distribution, import and CLI name are `retrievalci`.
 
 ## Goal and target users
 
@@ -80,7 +80,7 @@ When optional model calls are introduced, version prompts and output schemas, va
 
 ## Installation and integration design
 
-The following command names record the original proposed interfaces; actual local commands are in README. Original code is MIT licensed. Reserve a public package name and publish only after the clean-install gate passes.
+The following command names record the original proposed interfaces; actual local commands are in README. Original code is MIT licensed. The public distribution is `retrievalci`; registry uploads require the clean-install gate.
 
 ```text
 retrievalci snapshot ./docs --name candidate
@@ -124,7 +124,7 @@ Add a report UI or server directory only when that milestone begins. Keep runtim
 | 3. Add metrics | Implemented: recall/MRR at raw retrieval-unit ranks, with deduplicated evidence. | Hand-calculated metrics and chunk normalization tests. |
 | 4. Build comparison gate | Implemented: compatible-input/per-query gates and separate stale/deleted-gold findings. | Incomplete/partial runs never pass; seeded regressions are detected. |
 | 5. Add explanations | Implemented: source diffs, rename details, expandable hit/gold evidence and offline query filtering. | Escaping/source-diff tests; no unsupported causal claims. |
-| 6. Package and pilot | Local package, clean-install validation, CI configuration and release docs implemented. PyPI publication/pilot are external remaining gates. | No PyPI release or independent pilot is claimed. |
+| 6. Package and pilot | Local package, clean-install validation, CI configuration and release docs implemented. Public distribution packaging is prepared; independent pilots remain a separate gate. | Package availability does not establish pilot or production validation. |
 
 Proceed in order. Each phase should finish with a runnable example and its verification evidence. Size the next phase after measuring the current one; no fixed delivery date is assumed.
 

@@ -1,9 +1,9 @@
 # Implementation status
 
-Version 0.2.0, local development release, 13 October 2026. The in-scope local
-retrieval pipeline is implemented. GitHub source publication is separate from a
-PyPI package release. No PyPI publication, independent pilot, production
-validation, or hosted platform is claimed.
+Version 0.2.0, development release, 13 October 2026. The in-scope local retrieval
+pipeline is implemented. The public distribution, import and CLI name are
+`retrievalci`; artifacts include SPDX MIT metadata and a PyPI-specific description.
+No independent pilot, production validation or hosted platform is claimed.
 
 ## Implementation matrix
 
@@ -18,7 +18,7 @@ validation, or hosted platform is claimed.
 | Deterministic metrics | Recall@k, reciprocal rank, macro means, per-query thresholds | Hand-computed multiple-gold fixtures |
 | Comparison/explanations | Strict compatible-input gate; stale/deleted gold separated; source diffs/rename details | Seeded rank regression and stale-label tests |
 | Local report UI | Offline query/regression filtering, expandable evidence, source diffs | Escaping tests and generated demo reports |
-| Packaging/CI/docs | SDK/CLI, wheel metadata, CI matrix, contribution/security/changelog docs | Source and clean-install tests; CI configured, not claimed executed |
+| Packaging/CI/docs | SDK/CLI, wheel metadata, CI matrix, contribution/security/changelog docs | Source and clean-install tests; hosted results linked below |
 | Held-out data | Separate synthetic corpus/query suite | Separate suite evaluated; no real-user validation claimed |
 
 ## Verification
@@ -30,7 +30,7 @@ The report's embedded JavaScript also passed `node --check` after extraction.
 These checks ran locally on macOS/Python 3.10.10. The full suite
 requires a loopback socket for the controlled HTTP provider. A restricted sandbox
 that prohibits socket binding must allow this local test, rather than silently
-skip it. The configured cross-platform GitHub CI matrix has not run in this chat.
+skip it. See [current hosted results](https://github.com/Balaji91221/retrievalci/actions/workflows/ci.yml) for the cross-platform matrix.
 
 ```bash
 PYTHONPATH=src python3 -m unittest discover -s tests -v
@@ -54,8 +54,8 @@ python3 -m pip wheel . --no-build-isolation --no-deps --wheel-dir /tmp/retrieval
 
 ## Owner/external release work
 
-Original code is MIT licensed. Select an available PyPI package name; verify the
-repository's private security-reporting route; run the configured CI matrix; review
-release artifacts; publish to PyPI only with owner authorization; interview users
-and conduct an independent pilot with representative data. GitHub source publication
-does not complete these gates. Synthetic tests do not replace these activities.
+Original code is MIT licensed. Release gates include complete authored source
+distributions, wheel builds from sdists, installed-package tests and reviewed
+package descriptions. Registry uploads remain an authorized maintainer action.
+Interview users and conduct an independent pilot with representative data;
+package availability and synthetic tests do not replace those activities.

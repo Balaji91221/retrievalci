@@ -39,7 +39,28 @@ As an AI engineer, I want to test the evidence pipeline before judging the gener
 
 ## Quick start
 
-Requires Python 3.10+. The runtime uses the standard library; the lexical demo needs no model, database or account. Install from source—`retrievalci-local` is not published on PyPI.
+Requires Python 3.10+. The runtime uses the standard library; the lexical demo needs no model, database or account.
+
+### Install the package
+
+```bash
+python -m pip install retrievalci
+retrievalci --help
+```
+
+Create an immutable snapshot with the installed CLI, without cloning anything:
+
+```bash
+retrieval_demo="$(mktemp -d)"
+printf '%s\n' 'Refunds are available within 30 days.' > "$retrieval_demo/refunds.md"
+retrievalci snapshot "$retrieval_demo" --store "$retrieval_demo/artifacts"
+```
+
+The command prints a snapshot ID and an evidence manifest. This captures inputs; reviewed queries and comparable baseline/candidate runs supply the regression gate. These shell snippets use bash/zsh.
+
+### Run the complete source demo
+
+The repository contains the four-case demo below, tests and provider fixtures. These are included in the source distribution; the wheel installs the library and CLI.
 
 ```bash
 git clone https://github.com/Balaji91221/retrievalci.git
@@ -162,4 +183,4 @@ PYTHONPATH=src python -m unittest discover -s tests -v
 
 The local source and installed-wheel suites passed 37 tests. The suite includes a controlled loopback HTTP provider; current hosted results are in the CI badge above. Synthetic fixtures are not a real-user benchmark.
 
-MIT licensed. See [LICENSE](LICENSE) and [CHANGELOG.md](CHANGELOG.md). Version 0.2.0 is a development release with public source; PyPI publication and independent pilots remain separate steps.
+MIT licensed. See [LICENSE](LICENSE) and [CHANGELOG.md](CHANGELOG.md). Version 0.2.0 is a development release. Independent pilots and production validation remain separate steps.

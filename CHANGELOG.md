@@ -2,6 +2,8 @@
 
 ## 0.2.0 — local development release, 13 October 2026
 
+- Prepared public `retrievalci` distributions with SPDX license metadata, a PyPI description and complete authored source-distribution fixtures/docs.
+
 - Added UTF-8 directory ingestion, explicit stable source IDs, reviewed paragraph
   evidence, source spans, and chunk-to-evidence mapping.
 - Added subprocess deadlines, bounded transient retries, attempt traces, partial

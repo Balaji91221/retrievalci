@@ -1,0 +1,13 @@
+include LICENSE README.md README_PYPI.md PROJECT_PLAN.md IMPLEMENTATION_STATUS.md CHANGELOG.md CONTRIBUTING.md SECURITY.md
+recursive-include src *.py
+recursive-include tests *.py
+recursive-include examples *.py *.json *.md *.txt *.yaml *.yml
+recursive-include docs *.md *.svg *.png
+prune build
+prune dist
+prune .venv
+prune demo-output
+prune .retrievalci
+prune .checkpoints
+prune examples/evidence
+global-exclude *.py[cod] .DS_Store .env .env.* *.sqlite *.sqlite-journal *.sqlite-wal *.sqlite-shm
