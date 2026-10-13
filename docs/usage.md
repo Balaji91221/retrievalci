@@ -261,9 +261,8 @@ Baseline + candidate -> compatibility/completeness gate -> offline report
 ```
 
 Domain models/metrics remain separate from ingestion, providers, subprocess
-execution, checkpoint/artifact storage, reporting, and CLI composition. The
-initial plan's optional SQLite metadata is replaced by simpler content-addressed
-files; no database service is needed. Existing v1 artifacts remain readable.
+execution, checkpoint/artifact storage, reporting, and CLI composition. Metadata
+uses content-addressed files; no database service is needed. Existing v1 artifacts remain readable.
 Roll back by pinning the old package and keeping its baseline artifacts; do not
 expect an old reader to understand newly generated span-mapped records.
 
@@ -273,7 +272,7 @@ configured CI matrix tests wheel installation, the full suite, CLI, and demos on
 Python 3.10/3.12/3.13 across Linux/macOS/Windows. See IMPLEMENTATION_STATUS.md for
 what was actually executed locally.
 
-See CONTRIBUTING.md, SECURITY.md, CHANGELOG.md, and PROJECT_PLAN.md. The original code is MIT licensed.
+See CONTRIBUTING.md, SECURITY.md, and CHANGELOG.md. The original code is MIT licensed.
 Independent pilots and production validation remain separate work.
 Use [SECURITY.md](../SECURITY.md) for private reporting. Hosted dashboards, multi-tenancy, PDF/OCR,
 embedding providers, and optional answer evaluation are outside this local release.

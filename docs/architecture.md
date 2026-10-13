@@ -2,7 +2,7 @@
 
 [README](../README.md) · [Usage](usage.md) · [Implementation status](../IMPLEMENTATION_STATUS.md)
 
-This is the implemented 0.2.0 design. The [original plan](../PROJECT_PLAN.md) records earlier proposals; this document follows the actual models, worker boundary and artifact storage.
+This is the implemented 0.2.0 design. This document follows the actual models, worker boundary and artifact storage.
 
 ## Goal and system boundary
 

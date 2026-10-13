@@ -1,4 +1,4 @@
-include LICENSE README.md README_PYPI.md PROJECT_PLAN.md IMPLEMENTATION_STATUS.md CHANGELOG.md CONTRIBUTING.md SECURITY.md
+include LICENSE README.md README_PYPI.md IMPLEMENTATION_STATUS.md CHANGELOG.md CONTRIBUTING.md SECURITY.md
 recursive-include src *.py
 recursive-include tests *.py
 recursive-include examples *.py *.json *.md *.txt *.yaml *.yml

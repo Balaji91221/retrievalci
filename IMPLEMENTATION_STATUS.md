@@ -47,8 +47,8 @@ python3 -m pip wheel . --no-build-isolation --no-deps --wheel-dir /tmp/retrieval
 - Adapters are trusted Python code. Deadlines contain hangs, not malicious code;
   Windows does not provide descendant-process-tree containment.
 - Hashes detect changes, not malicious replacement of both artifacts and IDs.
-- Content-addressed filesystem artifacts deliberately replace the initial plan's
-  SQLite metadata. No hosted dashboard/database service is required.
+- Content-addressed filesystem artifacts store metadata without SQLite.
+  No hosted dashboard/database service is required.
 - Generic HTTP integration is implemented/tested against a controlled service;
   no third-party provider account or real production index was accessed.
 

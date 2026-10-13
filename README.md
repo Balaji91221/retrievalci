@@ -172,7 +172,7 @@ RetrievalCI evaluates retrieval evidence, not generated-answer quality. Gold lab
 | Ingest, evaluate, compare, resume and connect providers | [Usage guide](docs/usage.md) |
 | Understand worker, storage and scoring contracts | [Architecture](docs/architecture.md) |
 | Inspect synthetic review data | [Held-out fixtures](examples/heldout/README.md) |
-| Check implemented scope and evidence | [Implementation status](IMPLEMENTATION_STATUS.md) · [Original plan](PROJECT_PLAN.md) |
+| Check implemented scope and evidence | [Implementation status](IMPLEMENTATION_STATUS.md) |
 | Contribute or report a vulnerability | [Contributing](CONTRIBUTING.md) · [Security](SECURITY.md) |
 
 Run the source checks from the repository root:
