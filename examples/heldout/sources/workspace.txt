@@ -1,0 +1,3 @@
+Workspace exports contain projects and attachments.
+
+Invitations expire after seven days.

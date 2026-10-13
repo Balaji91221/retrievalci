@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "version": "synthetic-heldout-v1",
+  "queries": [
+    {
+      "id": "password-recovery",
+      "query": "password recovery",
+      "status": "active",
+      "reviewed": true,
+      "gold": [
+        {
+          "evidence_id": "heldout/access#paragraph:1",
+          "content_hash": "b61ca5a424ca51fe6182e06c5c98fa0fb4ab10d0481ef72e2cf5b317d08dc33f"
+        }
+      ]
+    },
+    {
+      "id": "backup-codes",
+      "query": "backup codes",
+      "status": "active",
+      "reviewed": true,
+      "gold": [
+        {
+          "evidence_id": "heldout/access#paragraph:2",
+          "content_hash": "1bf052a71821685c2a2bce4ea2eb446f37d03b228b20119a2d5aebd0e4f254b6"
+        }
+      ]
+    },
+    {
+      "id": "workspace-export",
+      "query": "workspace exports",
+      "status": "active",
+      "reviewed": true,
+      "gold": [
+        {
+          "evidence_id": "heldout/workspace#paragraph:1",
+          "content_hash": "7231d418c4cfb4ed3cc5c62f4470b3f6fef9c8af64630e3f9f0cd116d5d9c091"
+        }
+      ]
+    },
+    {
+      "id": "invitation-expiry",
+      "query": "invitations expire",
+      "status": "active",
+      "reviewed": true,
+      "gold": [
+        {
+          "evidence_id": "heldout/workspace#paragraph:2",
+          "content_hash": "3d4d83ae9f083f474230f34396a75407ed10316c965c9255f0734a87de726140"
+        }
+      ]
+    }
+  ]
+}

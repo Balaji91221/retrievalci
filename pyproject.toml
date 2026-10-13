@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "retrievalci-local"
+version = "0.2.0"
+description = "Local, evidence-aware regression checks for retrieval systems"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = []
+license = {file = "LICENSE"}
+
+[project.scripts]
+retrievalci = "retrievalci.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

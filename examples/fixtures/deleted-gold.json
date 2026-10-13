@@ -1,0 +1,9 @@
+{
+  "schema_version": 1,
+  "documents": [
+    {
+      "id": "help/delivery",
+      "text": "To track delivery, open the orders page."
+    }
+  ]
+}

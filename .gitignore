@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+.venv/
+.retrievalci/
+build/
+dist/
+*.egg-info/
+demo-output/
+.checkpoints/
+
+# Local credentials, machine metadata, and generated output
+.DS_Store
+.env
+.env.*
+!.env.example
+.pytest_cache/

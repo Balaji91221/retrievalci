@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "version": "synthetic-reviewed-v1",
+  "queries": [
+    {
+      "id": "refund-question",
+      "query": "refund",
+      "status": "active",
+      "reviewed": true,
+      "gold": [
+        {
+          "evidence_id": "policy/refunds",
+          "content_hash": "361ea8179f7a2aa857088af319e62388f99da9139a765655b652bdc322393f54"
+        }
+      ]
+    },
+    {
+      "id": "delivery-question",
+      "query": "delivery",
+      "status": "active",
+      "reviewed": true,
+      "gold": [
+        {
+          "evidence_id": "help/delivery",
+          "content_hash": "c413af9b6e9eb2c89e93a0de939e63bf3006b6cad49b96cafb5070f19810f320"
+        }
+      ]
+    }
+  ]
+}

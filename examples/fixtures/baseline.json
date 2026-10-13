@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "documents": [
+    {
+      "id": "policy/refunds",
+      "text": "Refund requests require the purchase receipt."
+    },
+    {
+      "id": "help/delivery",
+      "text": "To track delivery, open the orders page."
+    }
+  ]
+}
